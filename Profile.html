@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').click(function () {
+                $('a').removeClass('active');
+                $(this).toggleClass('active');
+            })
+
+            $('.home').click(function () {
+                $('li a').removeClass('act');
+                $(this).addClass('act');
+                $('body').css('background-color', '#5b37b7')
+            })
+
+            $('.like').click(function () {
+                $('li a').removeClass('act');
+                $(this).addClass('act');
+                $('body').css('background-color', '#c53a98')
+            })
+
+            $('.search').click(function () {
+                $('li a').removeClass('act');
+                $(this).addClass('act');
+                $('body').css('background-color', '#e6a91a')
+            })
+
+            $('.profile').click(function () {
+                $('li a').removeClass('act');
+                $(this).addClass('act');
+                $('body').css('background-color', '#1094aa')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="javascript:void(0)" class="home active act"><i class="icon-home"></i><span>Home</span></a></li>
+            <li><a href="javascript:void(0)" class="like"><i class="icon-heart"></i><span>Likes</span></a></li>
+            <li><a href="javascript:void(0)" class="search"><i class="icon-search"></i><span>Find</span></a></li>
+            <li><a href="javascript:void(0)" class="profile"><i class="icon-profile"></i><span>Profile</span></a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Inspired from <a href="https://dribbble.com/shots/5925052-Google-Bottom-Bar-Navigation-Pattern">Dribbble</a></p>
+    </footer>
+</body>
+
+</html>
